@@ -10,5 +10,9 @@ yum -y update
 yum install -y zfs
 modprobe zfs
 
+zpool create otus1 mirror /dev/sdb /dev/sdc
+zpool create otus1 mirror /dev/sdd /dev/sde
+zpool create otus1 mirror /dev/sdf /dev/sdg
+zpool create otus1 mirror /dev/sdh /dev/sdi
 
 
