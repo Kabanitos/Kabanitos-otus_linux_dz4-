@@ -59,7 +59,9 @@ zpool status
 ```
 # Работа со снапшотом, поиск сообщения от преподавателя
 Скачаем файл, указанный в задании:
+```
 wget -O otus_task2.file --no-check-certificate https://drive.google.com/u/0/uc?id=1gH8gCL9y7Nd5Ti3IRmplZPF1XjzxeRAG&export=download
+```
 Востанавливаем FS из снапшота:
 ```
 zfs receive otus/test@today < otus_task2.file
